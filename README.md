@@ -39,10 +39,10 @@ Go to the official Docker website at [https://www.docker.com/](https://www.docke
 1. Enter the following command to check the installed Docker version:
 
 ```sh
-   docker --version
+docker --version
 ```
 
-### Step 6: Run a Test Docker Command
+### Step 6: Running First Container
 
 ```sh
 docker run hello-world
@@ -113,3 +113,8 @@ A self-sufficient runtime for containers
 ## Docker Architecture
 
 ![Docker Architecture](https://docs.docker.com/get-started/images/docker-architecture.webp)
+
+## Author
+
+- Author Name: `Nguyễn Khánh Quy`
+- Email: <nguyenkhanhquy123@gmail.com>
