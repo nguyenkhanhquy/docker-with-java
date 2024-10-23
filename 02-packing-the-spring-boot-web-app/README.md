@@ -6,7 +6,7 @@ This project demonstrates how to package and run a Spring Boot web application.
 
 Before you begin, ensure you have the following installed:
 
-- Java Development Kit ([JDK](https://www.oracle.com/java/technologies/downloads/)) 17 or later
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/downloads/) 17 or later
 - [Apache Maven](https://maven.apache.org/download.cgi) 3.9.9 or later
 
 ## Intallation
