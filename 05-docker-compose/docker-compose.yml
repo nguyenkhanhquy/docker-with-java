@@ -1,0 +1,37 @@
+version: "3.9"
+
+services:
+  mysql:
+    container_name: mysql
+    image: mysql:8.4.2
+    ports:
+      - "3307:3306"
+    environment:
+      - MYSQL_ROOT_PASSWORD=admin1234
+    networks:
+      - stack
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "-h", "localhost", "-u", "root", "-padmin1234" ]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  application:
+    container_name: application
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "8081:8081"
+    env_file:
+      - .env.docker
+    networks:
+      - stack
+    depends_on:
+      mysql:
+        condition: service_healthy
+
+networks:
+  stack:
+    name: stack
+    driver: bridge
