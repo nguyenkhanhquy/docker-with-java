@@ -15,6 +15,8 @@ services:
       interval: 30s
       timeout: 10s
       retries: 3
+    volumes:
+      - mysql_data:/var/lib/mysql
 
   application:
     container_name: application
@@ -35,3 +37,7 @@ networks:
   stack:
     name: stack
     driver: bridge
+
+volumes:
+    mysql_data:
+        driver: local

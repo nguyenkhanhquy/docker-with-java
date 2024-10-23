@@ -22,4 +22,12 @@ public class StudentController {
     public List<Student> getStudents() {
         return studentRepository.findAll();
     }
+
+    @RequestMapping("/addStudent")
+    public Student addStudent() {
+        Student student = new Student();
+        student.setName("John Doe");
+        student.setAge(25);
+        return studentRepository.save(student);
+    }
 }
