@@ -118,3 +118,7 @@ A self-sufficient runtime for containers
 
 - Author Name: `Nguyễn Khánh Quy`
 - Email: <nguyenkhanhquy123@gmail.com>
+
+## License
+
+This project is licensed under the MIT License - see the [MIT License](https://github.com/nguyenkhanhquy/docker-with-java/blob/main/LICENSE) file for details.
